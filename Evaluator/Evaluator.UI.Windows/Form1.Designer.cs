@@ -58,7 +58,7 @@
             txtDisplay.BackColor = Color.FromArgb(0, 192, 0);
             txtDisplay.Location = new Point(12, 12);
             txtDisplay.Name = "txtDisplay";
-            txtDisplay.Size = new Size(420, 23);
+            txtDisplay.Size = new Size(415, 23);
             txtDisplay.TabIndex = 0;
             // 
             // btn7
@@ -110,7 +110,7 @@
             // 
             btnMultiply.BackColor = Color.Yellow;
             btnMultiply.Font = new Font("Segoe UI", 15.75F);
-            btnMultiply.Location = new Point(300, 54);
+            btnMultiply.Location = new Point(293, 54);
             btnMultiply.Name = "btnMultiply";
             btnMultiply.Size = new Size(67, 41);
             btnMultiply.TabIndex = 5;
@@ -167,7 +167,7 @@
             // 
             btnMinus.BackColor = Color.Yellow;
             btnMinus.Font = new Font("Segoe UI", 15.75F);
-            btnMinus.Location = new Point(300, 101);
+            btnMinus.Location = new Point(293, 101);
             btnMinus.Name = "btnMinus";
             btnMinus.Size = new Size(67, 41);
             btnMinus.TabIndex = 10;
@@ -224,7 +224,7 @@
             // 
             btnCloseParenthesis.BackColor = Color.Yellow;
             btnCloseParenthesis.Font = new Font("Segoe UI", 15.75F);
-            btnCloseParenthesis.Location = new Point(300, 148);
+            btnCloseParenthesis.Location = new Point(293, 148);
             btnCloseParenthesis.Name = "btnCloseParenthesis";
             btnCloseParenthesis.Size = new Size(67, 41);
             btnCloseParenthesis.TabIndex = 15;
@@ -252,7 +252,7 @@
             btnDot.TabIndex = 17;
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = true;
-            btnDot.Click += btnPow_Click;
+            btnDot.Click += btnDot_Click;
             // 
             // btnResult
             // 
@@ -260,7 +260,7 @@
             btnResult.Font = new Font("Segoe UI", 15.75F);
             btnResult.Location = new Point(220, 195);
             btnResult.Name = "btnResult";
-            btnResult.Size = new Size(220, 41);
+            btnResult.Size = new Size(212, 41);
             btnResult.TabIndex = 18;
             btnResult.Text = "=";
             btnResult.UseVisualStyleBackColor = false;
@@ -270,7 +270,7 @@
             // 
             btnDelete.BackColor = Color.Yellow;
             btnDelete.Font = new Font("Segoe UI", 15.75F);
-            btnDelete.Location = new Point(373, 54);
+            btnDelete.Location = new Point(365, 54);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(67, 41);
             btnDelete.TabIndex = 19;
@@ -282,7 +282,7 @@
             // 
             btnClear.BackColor = Color.Yellow;
             btnClear.Font = new Font("Segoe UI", 15.75F);
-            btnClear.Location = new Point(373, 101);
+            btnClear.Location = new Point(365, 101);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(67, 41);
             btnClear.TabIndex = 20;
@@ -294,20 +294,20 @@
             // 
             btnPow.BackColor = Color.Yellow;
             btnPow.Font = new Font("Segoe UI", 15.75F);
-            btnPow.Location = new Point(373, 148);
+            btnPow.Location = new Point(365, 148);
             btnPow.Name = "btnPow";
             btnPow.Size = new Size(67, 41);
             btnPow.TabIndex = 21;
             btnPow.Text = "^";
             btnPow.UseVisualStyleBackColor = false;
-            
+            btnPow.Click += btnPow_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(128, 128, 255);
-            ClientSize = new Size(444, 250);
+            ClientSize = new Size(439, 250);
             Controls.Add(btnPow);
             Controls.Add(btnClear);
             Controls.Add(btnDelete);

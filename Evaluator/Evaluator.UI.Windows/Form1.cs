@@ -59,10 +59,6 @@ namespace Evaluator.UI.Windows
             txtDisplay.Text += "0";
         }
 
-        private void btnDot_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Text += ".";
-        }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
@@ -104,14 +100,20 @@ namespace Evaluator.UI.Windows
             txtDisplay.Text += ")";
         }
 
-        private void btnPow_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Text += "^";
-        }
 
         private void btnResult_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text.Length > 0 ? FunctionEvaluator.Evalute(txtDisplay.Text).ToString() : string.Empty;
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text += ".";
+        }
+
+        private void btnPow_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text += "^";
         }
     }
 }
